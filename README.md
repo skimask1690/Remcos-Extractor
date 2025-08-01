@@ -40,10 +40,11 @@ pip install pefile pycryptodome
 ---
 
 ## 🔹 References
-The configuration field offsets and descriptions are based on the analysis in  
+The configuration field indexes and descriptions are based on the analysis in  
 ➡️ [Elastic Security Labs – Dissecting Remcos RAT (Part Three)](https://www.elastic.co/security-labs/dissecting-remcos-rat-part-three)
 
 ---
 
 ## ⚠️ Disclaimer
 This tool is provided for educational and research purposes only. The author is not responsible for any misuse.
+
