@@ -57,7 +57,12 @@ def parse_data(data):
     """Parse and decode data fields."""
     fields = data.split('||')
     
-    for i, field in enumerate(fields):
+    for i, raw_field in enumerate(fields):
+        field = raw_field.strip().strip("\x00")
+        
+        if not field:
+            continue  
+
         index = i
         if index in field_mapping:
             field_name, description = field_mapping[index]
