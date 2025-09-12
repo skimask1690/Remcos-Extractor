@@ -58,7 +58,7 @@ def parse_data(data):
     fields = data.split('||')
     
     for i, raw_field in enumerate(fields):
-        field = raw_field.strip().strip("\x00")
+        field = raw_field.strip().strip("\x00").strip("\x01")
         
         if not field:
             continue  
