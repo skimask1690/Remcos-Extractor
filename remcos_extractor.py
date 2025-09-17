@@ -147,7 +147,7 @@ def main():
     if len(sys.argv) < 2 or any(arg in sys.argv for arg in ('-h', '-help', '--h', '--help', '/h', '/help', 'help', 'h', '-?', '?', '/?')):
         print("Usage:")
         print(f"  Decrypt: python {script_name} -d <remcos_binary> <output_decrypted_config>")
-        print(f"  Re-encrypt: python {script_name} -e <remcos_binary> <decrypted_config> <output_remcos_binary>")
+        print(f"  Encrypt: python {script_name} -e <remcos_binary> <decrypted_config> <output_remcos_binary>")
         print(f"  Parse: python {script_name} -p <no_tls_decrypted_config>")
         sys.exit(1)
 
