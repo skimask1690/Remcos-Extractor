@@ -146,9 +146,9 @@ def main():
     script_name = os.path.basename(__file__)    
     if len(sys.argv) < 2 or any(arg in sys.argv for arg in ('-h', '-help', '--h', '--help', '/h', '/help', 'help', 'h', '-?', '?', '/?')):
         print("Usage:")
-        print(f"  To decrypt: python {script_name} -d <remcos_binary> <output_decrypted_config>")
-        print(f"  To re-encrypt: python {script_name} -e <remcos_binary> <decrypted_config> <output_remcos_binary>")
-        print(f"  To parse: python {script_name} -p <decrypted_config>")
+        print(f"  Decrypt: python {script_name} -d <remcos_binary> <output_decrypted_config>")
+        print(f"  Re-encrypt: python {script_name} -e <remcos_binary> <decrypted_config> <output_remcos_binary>")
+        print(f"  Parse: python {script_name} -p <decrypted_config_no_tls>")
         sys.exit(1)
 
     mode = sys.argv[1]
