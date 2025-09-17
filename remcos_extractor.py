@@ -148,7 +148,7 @@ def main():
         print("Usage:")
         print(f"  Decrypt: python {script_name} -d <remcos_binary> <output_decrypted_config>")
         print(f"  Re-encrypt: python {script_name} -e <remcos_binary> <decrypted_config> <output_remcos_binary>")
-        print(f"  Parse: python {script_name} -p <decrypted_config_no_tls>")
+        print(f"  Parse: python {script_name} -p <no_tls_decrypted_config>")
         sys.exit(1)
 
     mode = sys.argv[1]
